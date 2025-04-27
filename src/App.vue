@@ -8,7 +8,16 @@
 
             <SearchBar/>
 
-            <ResultsSet/>
+            <suspense>
+
+                <template #default>
+                    <ResultsSet/>
+                </template>
+
+                <template #fallback>
+                </template>
+
+            </suspense>
 
         </div>
 
